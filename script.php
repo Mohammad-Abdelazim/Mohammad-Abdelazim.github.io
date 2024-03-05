@@ -4,11 +4,11 @@ if (isset($_GET['status']))
 {
 	if($_GET['status'] == 'on')
 	{
-		echo ("LED On"); 
+		header("Location: on.html"); 
 	}
 	elseif($_GET['status'] == 'off')
 	{
-		echo ("LED Off");
+		header("Location: off.html"); 
 	}
 }
 
